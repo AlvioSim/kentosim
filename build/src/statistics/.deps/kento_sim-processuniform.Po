@@ -1,0 +1,9 @@
+src/statistics/kento_sim-processuniform.o: \
+ ../src/statistics/processuniform.cpp /usr/include/stdc-predef.h \
+ ../src/statistics/processuniform.h ../src/statistics/process.h
+
+/usr/include/stdc-predef.h:
+
+../src/statistics/processuniform.h:
+
+../src/statistics/process.h:

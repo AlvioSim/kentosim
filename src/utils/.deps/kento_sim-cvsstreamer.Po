@@ -1,0 +1,6 @@
+src/utils/kento_sim-cvsstreamer.o: src/utils/cvsstreamer.cpp \
+ /usr/include/stdc-predef.h src/utils/cvsstreamer.h
+
+/usr/include/stdc-predef.h:
+
+src/utils/cvsstreamer.h:

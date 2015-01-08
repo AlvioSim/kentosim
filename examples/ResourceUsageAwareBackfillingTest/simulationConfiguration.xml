@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationConfiguration> 
+  <!-- this is an example of simulation configuration:
+       - This simulates the DeepsearchPolicy 
+       -->
+  <Policy>
+   <Common>
+     <!-- common values for all the policies  -->
+     <WorkloadPath>/home/fguim/experiments/CollisionesEASY/SDSC-SP2/experiment36/SDSC-SP2.swf</WorkloadPath>
+     <workload>SWFExt</workload>
+     <jobRequirementsFile>/home/fguim/experiments/CollisionesEASY/SDSC-SP2/experiment36/SDSC-SP2.reqs</jobRequirementsFile>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/CollisionesEASY/SDSC-SP2/experiment36/marenostrum128.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>MN1</ArchitectureType>
+     <ResourceSelectionPolicy>FIND_LESS_CONSUME</ResourceSelectionPolicy>
+     <Policy>EASY</Policy>
+    
+     <generateParaver>NO</generateParaver>
+
+     <JobsToLoad>5000</JobsToLoad>
+
+     
+     <OutPutDir>/home/fguim/experiments/CollisionesEASY/SDSC-SP2/experiment14/output</OutPutDir>      
+     <GlobalStatisticsOutputFile>/home/fguim/experiments/CollisionesEASY/SDSC-SP2/experiment36/output/stats.out</GlobalStatisticsOutputFile>    
+     <JobsSimPerformanceCSVFile>/home/fguim/experiments/CollisionesEASY/SDSC-SP2/experiment36/output/JobsPerformanceFile.csv</JobsSimPerformanceCSVFile>
+
+     <DebugLevel>2</DebugLevel>
+     
+     <StatisticsConfigFile>/home/fguim/sim_mn2/SimulatorConfigurations/defaults/StatisticsSimulationConfigurationTemplate.xml</StatisticsConfigFile>
+     <collectStatisticsInterval>10200</collectStatisticsInterval>
+   </Common>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>RUA_BACKFILLING</backfillingVariant>
+     <SimulateResourceUsage>YES</SimulateResourceUsage>
+   </EASY>   
+  </Policy> 
+</SimulationConfiguration>
+

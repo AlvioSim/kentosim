@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationConfiguration> 
+  <Policy>
+   <Common>
+     <!-- common values for all the policies  -->
+     <WorkloadPath>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/kk.csv</WorkloadPath>
+     <jobRequirementsFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/Reqkk.csv.ext</jobRequirementsFile>
+     <workload>SWFGrid</workload>
+     <Policy>META_BROKERING_SYSTEM</Policy>
+     
+     <OutPutDir>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/output</OutPutDir>    
+     <GlobalStatisticsOutputFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/output/stats.out</GlobalStatisticsOutputFile>    
+     <JobsSimPerformanceCSVFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/output/JobsPerformanceFile.csv</JobsSimPerformanceCSVFile>
+     <PolicySimPerfomanceCSVFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/output/PolicyPerformanceFile.csv</PolicySimPerfomanceCSVFile>
+     <DebugLevel>2</DebugLevel>
+     <StatisticsConfigFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/defaults/StatisticsSimulationConfigurationTemplate.xml</StatisticsConfigFile>
+     <collectStatisticsInterval>600</collectStatisticsInterval>
+     <generateParaver>NO</generateParaver><!-- the paraver stuff will be implemented for each center  -->
+   </Common>
+   <MetaBrokeringSystem>
+    <VirtualOrganitzation> 
+    <VOName>VirtualOrgatnization1</VOName>
+    <BRANKPolicy>
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center1.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster01</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor> <!-- before 4 it is a float 1.2 (e.g. Ghz)-->
+     </Center>
+
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center2.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster02</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>   
+
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center3.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster03</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>     
+   
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center4.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster04</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center5.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster05</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center6.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster06</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center7.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster07</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>     
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center8.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster08</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center9.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster09</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center10.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster10</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+    </BRANKPolicy>
+    </VirtualOrganitzation>    
+    <VirtualOrganitzation> 
+    <VOName>VirtualOrgatnization2</VOName>
+    <BRANKPolicy>
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center1.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster01</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor> <!-- before 4 it is a float 1.2 (e.g. Ghz)-->
+     </Center>
+
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center2.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster02</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>   
+
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center3.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster03</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>     
+   
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center4.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster04</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center5.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster05</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center6.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster06</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center7.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster07</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>     
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center8.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster08</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center9.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster09</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center10.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster10</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+    </BRANKPolicy>
+    </VirtualOrganitzation>              
+    <VirtualOrganitzation> 
+    <VOName>VirtualOrgatnization3</VOName>
+    <BRANKPolicy>
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center1.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster01</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor> <!-- before 4 it is a float 1.2 (e.g. Ghz)-->
+     </Center>
+
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center2.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster02</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>   
+
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center3.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster03</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>     
+   
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center4.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster04</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center5.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster05</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center6.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster06</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center7.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster07</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>     
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center8.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster08</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center9.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster09</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     
+     
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/BRANKPolicyExperiments/experiment2MetaSystem/center10.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+      <CenterName>cluster10</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     </BRANKPolicy>
+    </VirtualOrganitzation>    
+   </MetaBrokeringSystem>
+  </Policy> 
+</SimulationConfiguration>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MareNostrum>
+  <BladeCenters>  
+    <BladeCenter Id="0">
+      <IOBW>100</IOBW>
+      <BladeNodes>
+        <Node Id="1" Repeat="28">
+          <MemoryBW>6000</MemoryBW>
+          <MemoryCapacity>16000</MemoryCapacity>
+          <NetworkBW>256</NetworkBW>
+	  <EthernetBW>100</EthernetBW>
+          <NumberCPUS>4</NumberCPUS>
+        </Node> 		
+      </BladeNodes> 
+  </BladeCenter>
+</BladeCenters>
+</MareNostrum>
+

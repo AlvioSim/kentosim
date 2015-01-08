@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationConfiguration> 
+  <!-- this is an example of simulation configuration:
+       - This simulates the DeepsearchPolicy 
+       -->
+  <Policy>
+   <Common>
+     <!-- common values for all the policies  -->
+     <WorkloadPath>/home/irodero/kento-sim_64/test/DAS_fs1_100_jobs.swf</WorkloadPath>
+     <workload>SWF</workload>
+     <ArchitectureConfigurationFile>/home/irodero/kento-sim_64/test/marenostrum64Cpus.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>MN1</ArchitectureType>
+     <Policy>FCFS</Policy>
+    
+     <ParaverOutputDir>/home/irodero/kento-sim_64/test/output/</ParaverOutputDir>
+     <ParaverTraceName>fcfs_test1</ParaverTraceName>
+     
+     <OutPutDir>/home/irodero/kento-sim_64/test/output</OutPutDir>    
+     <GlobalStatisticsOutputFile>/home/irodero/kento-sim_64/test/output/stats.out</GlobalStatisticsOutputFile>    
+     <DebugLevel>6</DebugLevel>
+     <generateParaver/>
+     <StatisticsConfigFile>/home/irodero/kento-sim_64/kento_sim/SimulatorConfigurations/defaults/StatisticsSimulationConfigurationTemplate.xml</StatisticsConfigFile>
+   </Common>
+  </Policy> 
+</SimulationConfiguration>
+

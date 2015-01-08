@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <!-- default value -->
+    <DefaultWorkloadPath>/home/bsc15/bsc15879/sim_mn2/traces/tests/fcfs_test1/fcfs_test1.swf</DefaultWorkloadPath>
+    <DefaultArchitectureConfigurationFile>/home/bsc15/bsc15879/sim_mn2/SimulatorConfigurations/marenostrum.xml</DefaultArchitectureConfigurationFile>
+    <DefaultPolicy>FCFS</DefaultPolicy>
+    
+    <DefaultParaverOutputDir>/home/bsc15/bsc15879/sim_mn2/traces</DefaultParaverOutputDir>
+    <DefaultParaverTraceName>paraverTrace</DefaultParaverTraceName>
+    
+    <DefaultOutPutDir>/home/bsc15/bsc15879/sim_mn2/traces</DefaultOutPutDir>
+    
+    <ErrorFilePath>/home/bsc15/bsc15879/tmp/mn2Sim/error.log</ErrorFilePath>
+    <DebugFilePath>/home/bsc15/bsc15879/tmp/mn2Sim/debug.log</DebugFilePath>
+    
+    <JavaBinaryPath>/opt/IBMJava2-ppc64-142/bin/java</JavaBinaryPath>
+    <JavaClassPath>/usr/lib/java</JavaClassPath>
+    <WekaJarPath>/home/bsc15/bsc15879/aplic/weka/weka.jar</WekaJarPath>
+
+    <TemporaryDirectory>/home/bsc15/bsc15879/tmp</TemporaryDirectory>
+
+    <RBinaryPath>/usr/bin/R</RBinaryPath>
+    <RScriptsBaseDir>/home/bsc15/bsc15879/sim_mn2/SimulatorConfigurations/RScripts</RScriptsBaseDir>
+    
+    <RPostProcessingFiles>
+      <Script>
+        <AnalyzerType>JOB_CSV_R_ANALYZER_BASIC</AnalyzerType>
+	<ScriptPath>/home/bsc15/bsc15879/sim_mn2/SimulatorConfigurations/RScripts/BasicJobCVSSimulationPlots.r</ScriptPath>
+      </Script>   
+    </RPostProcessingFiles>
+
+    <JobsToSimulate>-1</JobsToSimulate>
+    
+    <DebugLevel>2</DebugLevel>
+    <StatisticsConfigFile>/home/bsc15/bsc15879/sim_mn2/traces/tests/StatisticsSimulationConfigurationTemplate.xml</StatisticsConfigFile>    
+
+    <LessConsumeAlternativeThreshold>1.25</LessConsumeAlternativeThreshold>
+</Configuration>
+

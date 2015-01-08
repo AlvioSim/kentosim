@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationConfiguration>
+  <Policy>
+   <Common>
+     <!-- common values for all the policies  -->
+     <WorkloadPath>/home/fguim/experiments/lasco/fussion_tarce_ordered_uniq_id_lc.swf</WorkloadPath>
+     <workload>SWF</workload>
+     <Policy>ISIS_DISPATCHER</Policy>
+
+     <OutPutDir>/home/fguim/experiments/lasco/output</OutPutDir>
+     <GlobalStatisticsOutputFile>/home/fguim/experiments/lasco/output/stats.out</GlobalStatisticsOutputFile>
+     <JobsSimPerformanceCSVFile>/home/fguim/experiments/lasco/output/JobsPerformanceFile.csv</JobsSimPerformanceCSVFile>
+     <PolicySimPerfomanceCSVFile>/home/fguim/experiments/lasco/output/PolicyPerformanceFile.csv</PolicySimPerfomanceCSVFile>
+     <DebugLevel>2</DebugLevel>
+     <StatisticsConfigFile>/home/fguim/sim_mn2/SimulatorConfigurations/defaults/StatisticsSimulationConfigurationTemplate.xml</StatisticsConfigFile>
+     
+     <PredictionServiceConfigFile>/home/fguim/sim_mn2/SimulatorConfigurations/defaults/UserRuntimEstimatePred.xml</PredictionServiceConfigFile>
+
+     <collectStatisticsInterval>3600</collectStatisticsInterval>
+     <generateParaver>NO</generateParaver><!-- the paraver stuff will be implemented for each center  -->
+   </Common>
+<ISISDispatcher>
+<MetricToOptmize>WAITTIME</MetricToOptmize>
+<AmountOfKnownCenters>1</AmountOfKnownCenters>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_CTC-SP2-1996-2.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>2</EmulateCPUFactor>
+     <CenterName>CTC-SP2-1996-2</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_DAS2-fs0-2003-1.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>4</EmulateCPUFactor>
+     <CenterName>DAS2-fs0-2003-1</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>EASY_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_DAS2-fs1-2003-1.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>5</EmulateCPUFactor>
+     <CenterName>DAS2-fs1-2003-1</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_DAS2-fs2-2003-1.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>5</EmulateCPUFactor>
+     <CenterName>DAS2-fs2-2003-1</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_DAS2-fs3-2003-1.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>5</EmulateCPUFactor>
+     <CenterName>DAS2-fs3-2003-1</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>FCFS</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_DAS2-fs4-2003-1.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>5</EmulateCPUFactor>
+     <CenterName>DAS2-fs4-2003-1</CenterName>
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_HPC2N-2002-1.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>4</EmulateCPUFactor>
+     <CenterName>HPC2N-2002-1</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>EASY_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_KTH-SP2-1996-2.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>5</EmulateCPUFactor>
+     <CenterName>KTH-SP2-1996-2</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>EASY_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_LANL-CM5-1994-3.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>1</EmulateCPUFactor>
+     <CenterName>LANL-CM5-1994-3</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>EASY_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_LCG-2005-1.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>2</EmulateCPUFactor>
+     <CenterName>LCG-2005-1</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>EASY_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_LLNL-Atlas-2006-1.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>8</EmulateCPUFactor>
+     <CenterName>LLNL-Atlas-2006-1</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>FCFS</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_LLNL-Thunder-2007-1.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>8</EmulateCPUFactor>
+     <CenterName>LLNL-Thunder-2007-1</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>EASY_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>FCFS</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_LPC-EGEE-2004-1.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>2</EmulateCPUFactor>
+     <CenterName>LPC-EGEE-2004-1</CenterName>
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_NASA-iPSC-1993-2.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>4</EmulateCPUFactor>
+     <CenterName>NASA-iPSC-1993-2</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+    <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_OSC-Clust-2000-2.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>3.5</EmulateCPUFactor>
+     <CenterName>OSC-Clust-2000-2</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_SDSC-BLUE-2000-3.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>2</EmulateCPUFactor>
+     <CenterName>SDSC-BLUE-2000-3</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>FCFS</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_SDSC-DS-2004-1.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>3</EmulateCPUFactor>
+     <CenterName>SDSC-DS-2004-1</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_SDSC-Par-1995-2.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>2</EmulateCPUFactor>
+     <CenterName>SDSC-Par-1995-2</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>EASY_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_SDSC-Par-1996-2.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>2</EmulateCPUFactor>
+     <CenterName>SDSC-Par-1996-2</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>EASY_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>EASY</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_SDSC-SP2-1998-3.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>1.5</EmulateCPUFactor>
+     <CenterName>SDSC-SP2-1998-3</CenterName>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>EASY_BACKFILLING</backfillingVariant>
+   </EASY>   
+</Center>
+<Center>
+     <Policy>FCFS</Policy>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/lasco/Architecture_SHARCNET-2005-1.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <EmulateCPUFactor>8</EmulateCPUFactor>
+     <CenterName>SHARCNET-2005-1</CenterName>
+</Center>
+  </ISISDispatcher>
+  </Policy>
+</SimulationConfiguration>
+

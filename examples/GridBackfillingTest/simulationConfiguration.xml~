@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationConfiguration> 
+  <Policy>
+   <Common>
+     <!-- common values for all the policies  -->
+     <WorkloadPath>/home/fguim/experiments/GlobalPrediction/experiment1/GridSDSC-CTC-Sorted.swf</WorkloadPath>
+     <workload>SWF</workload>
+     <Policy>GRID_BACKFILLING</Policy>
+     
+     <OutPutDir>/home/fguim/experiments/GlobalPrediction/experiment1/output</OutPutDir>    
+     <GlobalStatisticsOutputFile>/home/fguim/experiments/GlobalPrediction/experiment1/output/stats.out</GlobalStatisticsOutputFile>    
+     <JobsSimPerformanceCSVFile>/home/fguim/experiments/GlobalPrediction/experiment1/output/JobsPerformanceFile.csv</JobsSimPerformanceCSVFile>
+     <DebugLevel>2</DebugLevel>
+     <StatisticsConfigFile>/home/fguim/sim_mn2/SimulatorConfigurations/defaults/StatisticsSimulationConfigurationTemplateComplete.xml</StatisticsConfigFile>
+     <collectStatisticsInterval>43200</collectStatisticsInterval>
+     
+     <CostAllocationUnitCenter>2</CostAllocationUnitCenter>
+     <PredictionServiceConfigFile>/home/fguim/sim_mn2/SimulatorConfigurations/defaults/HistoricalClassifier.xml</PredictionServiceConfigFile>
+     <generateParaver>NO</generateParaver><!-- the paraver stuff will be implemented for each center  -->
+     
+   </Common>
+   <GridBackfilling>
+     <MetricToOptmize>SLD_PREDICTED</MetricToOptmize>
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+	 <PredictionServiceConfigFile>/home/fguim/sim_mn2/SimulatorConfigurations/defaults/UserRuntimEstimatePred.xml</PredictionServiceConfigFile>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/GlobalPrediction/experiment1/EASYSimulations/CTC/CTC-Architecture.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>MN1</ArchitectureType>
+      <CenterName>CTC</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+	 <PredictionServiceConfigFile>/home/fguim/sim_mn2/SimulatorConfigurations/defaults/UserRuntimEstimatePred.xml</PredictionServiceConfigFile>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/GlobalPrediction/experiment1/EASYSimulations/SDSC/SDSC-Architecture.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>MN1</ArchitectureType>
+      <CenterName>SDSC</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>   
+     <Center>
+      <Policy>EASY</Policy>
+      <EASY>
+         <numberOfReservations>1</numberOfReservations>
+         <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+	 <PredictionServiceConfigFile>/home/fguim/sim_mn2/SimulatorConfigurations/defaults/UserRuntimEstimatePred.xml</PredictionServiceConfigFile>
+      </EASY>
+      <ArchitectureConfigurationFile>/home/fguim/experiments/GlobalPrediction/experiment1/EASYSimulations/SDSC-Blue/SDSC-Blue-Architecture.xml</ArchitectureConfigurationFile>
+      <ArchitectureType>MN1</ArchitectureType>
+      <CenterName>SDSC-Blue</CenterName>
+      <EmulateCPUFactor>1</EmulateCPUFactor>
+     </Center>        
+  </GridBackfilling>   
+  </Policy> 
+</SimulationConfiguration>
+

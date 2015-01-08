@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationConfiguration> 
+  <!-- this is an example of simulation configuration:
+       - This simulates the easy 
+       -->
+  <Policy>
+   <Common>
+     <!-- common values for all the policies  -->
+     <WorkloadPath>/home/fguim/experiments/large_data/LLNL-Thunder-2007-1.swf</WorkloadPath>
+     <workload>SWF</workload>
+     <ArrivalFactor>1</ArrivalFactor>
+     <ArchitectureConfigurationFile>/home/fguim/experiments/large_data/Architecture_LLNL-Thunder-2007-1.xml</ArchitectureConfigurationFile>
+     <ArchitectureType>LOCAL_SYSTEM</ArchitectureType>
+     <Policy>EASY</Policy>
+        
+     <OutPutDir>/home/fguim/experiments/large_data/output</OutPutDir>    
+     <GlobalStatisticsOutputFile>/home/fguim/experiments/large_data/output/LLNL-Thunder-2007-1stats.out</GlobalStatisticsOutputFile>    
+     <JobsSimPerformanceCSVFile>/home/fguim/experiments/large_data/output/LLNL-Thunder-2007-1JobsPerformanceFile.csv</JobsSimPerformanceCSVFile>
+     <PolicySimPerfomanceCSVFile>/home/fguim/experiments/large_data/output/LLNL-Thunder-2007-1PolicyPerformanceFile.csv</PolicySimPerfomanceCSVFile>
+     
+     <DebugLevel>2</DebugLevel>
+     <generateParaver>NO</generateParaver>     
+
+     <StatisticsConfigFile>/home/fguim/sim_mn2/SimulatorConfigurations/defaults/StatisticsSimulationConfigurationTemplate.xml</StatisticsConfigFile>     
+     <collectStatisticsInterval>3600</collectStatisticsInterval>
+   </Common>
+   <EASY>
+     <numberOfReservations>1</numberOfReservations>
+     <backfillingVariant>SJF_BACKFILLING</backfillingVariant>
+   </EASY>   
+  </Policy> 
+</SimulationConfiguration>
+

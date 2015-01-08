@@ -1,0 +1,5 @@
+matrix.o: utils/matrix.cpp /usr/include/stdc-predef.h utils/matrix.h
+
+/usr/include/stdc-predef.h:
+
+utils/matrix.h:

@@ -1,0 +1,2 @@
+copy kento_perf from 
+../kento_sim/debug/src/kento_sim

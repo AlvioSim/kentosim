@@ -1,0 +1,45 @@
+<PredictorConfiguration>
+  <Common>
+    <PreDeadlineMissManager>GRADUAL</PreDeadlineMissManager> <!-- No necessary for this predictor, but specified as an example -->
+    <PostDeadlineMissManager>GRADUAL</PostDeadlineMissManager> 
+  </Common>   
+  <HistoricalClassifier>
+    <ClassifierType>C45</ClassifierType>
+    <NumberOfBins>-1</NumberOfBins>
+    <DiscretizerType>SAME_INTERVAL_DISCRETIZER</DiscretizerType>
+    <ResponseVariables>
+      <!-- the name has been put in subnode due to probably in the future new params will be added for instance a discretization method per attribute -->
+      <Variable>
+        <Name>JobNumber</Name>
+      </Variable>	  
+      <Variable>
+        <Name>JobSimSubmitTime</Name>
+      </Variable>
+      <Variable>
+        <Name>JobSimCenter</Name>
+      </Variable>
+      <Variable>
+        <Name>NumberProcessors</Name>
+      </Variable>
+      <Variable>
+        <Name>OriginalRequestedTime</Name>
+      </Variable>
+      <Variable>
+        <Name>RequestedMemory</Name>
+      </Variable>
+      <Variable>
+        <Name>UserID</Name>
+      </Variable>
+      <Variable>
+        <Name>GroupID</Name>
+      </Variable>
+      <Variable>
+        <Name>Executable</Name>
+      </Variable>
+    </ResponseVariables>
+    <PredictionVariable>RunTime</PredictionVariable>
+    <ModelDirectoryFile>/tmp/</ModelDirectoryFile>
+    <NewFilePerModel>FALSE</NewFilePerModel>
+    <ModelIntervalGeneration>100</ModelIntervalGeneration>
+ </HistoricalClassifier>
+</PredictorConfiguration>

@@ -1,0 +1,6 @@
+cvsstreamer.o: utils/cvsstreamer.cpp /usr/include/stdc-predef.h \
+ utils/cvsstreamer.h
+
+/usr/include/stdc-predef.h:
+
+utils/cvsstreamer.h:

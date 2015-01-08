@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArchictectureConfiguration>
+ <Vendor>Intel Xeon</Vendor>
+ <OSName>Linux</OSName>
+ <ClockSpeed>2400</ClockSpeed>
+ <disKSize>10000</disKSize><!-- 0.05 TB-->
+ <Memory>1200000</Memory> <!-- CPUs X 10.000 -->
+ <NumberCPUS>512</NumberCPUS>
+</ArchictectureConfiguration>
+

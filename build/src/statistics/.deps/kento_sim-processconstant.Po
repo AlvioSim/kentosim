@@ -1,0 +1,9 @@
+src/statistics/kento_sim-processconstant.o: \
+ ../src/statistics/processconstant.cpp /usr/include/stdc-predef.h \
+ ../src/statistics/processconstant.h ../src/statistics/process.h
+
+/usr/include/stdc-predef.h:
+
+../src/statistics/processconstant.h:
+
+../src/statistics/process.h:

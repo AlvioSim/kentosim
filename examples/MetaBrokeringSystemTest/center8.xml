@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArchictectureConfiguration>
+ <Vendor>Intel Itanium2</Vendor>
+ <OSName>Linux</OSName>
+ <ClockSpeed>1600</ClockSpeed>
+ <disKSize>10000</disKSize><!-- 0.05 TB-->
+ <Memory>1030000</Memory> <!-- CPUs X 10.000 -->
+ <NumberCPUS>103</NumberCPUS>
+</ArchictectureConfiguration>

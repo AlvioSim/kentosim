@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <!-- default value -->
+    <DefaultWorkloadPath>/home/irodero/kento-sim_64/traces/test/trace.swf</DefaultWorkloadPath>
+    <DefaultArchitectureConfigurationFile>/home/irodero/kento-sim_64/kento_sim/SimulatorConfigurations/defaults/marenostrum.xml</DefaultArchitectureConfigurationFile>
+    <DefaultPolicy>FCFS</DefaultPolicy>
+    
+    <DefaultParaverOutputDir>/home/irodero/kento-sim_64/traces</DefaultParaverOutputDir>
+    <DefaultParaverTraceName>paraverTrace</DefaultParaverTraceName>
+    
+    <DefaultOutPutDir>/home/irodero/kento-sim_64/kento_sim/tmp</DefaultOutPutDir>
+    
+    <ErrorFilePath>/home/irodero/kento-sim_64/kento_sim/tmp/error.log</ErrorFilePath>
+    <DebugFilePath>/home/irodero/kento-sim_64/kento_sim/tmp/debug.log</DebugFilePath>
+    
+    <JavaBinaryPath>/usr/bin/</JavaBinaryPath>
+    <JavaClassPath>/usr/lib/</JavaClassPath>
+    <WekaJarPath>/usr/bin</WekaJarPath>
+
+    <TemporaryDirectory>/home/irodero/kento-sim_64/kento_sim/tmp</TemporaryDirectory>
+
+    <RBinaryPath>/usr/bin/R</RBinaryPath>
+    <RScriptsBaseDir>/home/irodero/kento-sim_64/kento_sim/SimulatorConfigurations/RScripts</RScriptsBaseDir>
+    
+    <RPostProcessingFiles>
+      <Script>
+        <AnalyzerType>JOB_CSV_R_ANALYZER_BASIC</AnalyzerType>
+	<ScriptPath>/home/irodero/kento-sim_64/kento_sim/SimulatorConfigurations/RScripts/BasicJobCVSSimulationPlots.r</ScriptPath>
+      </Script>   
+    </RPostProcessingFiles>
+
+    <JobsToSimulate>-1</JobsToSimulate>
+    
+    <DebugLevel>2</DebugLevel>
+    <StatisticsConfigFile>/home/irodero/kento-sim_64/kento_sim/SimulatorConfigurations/defaults/StatisticsSimulationConfigurationTemplate.xml</StatisticsConfigFile>    
+
+    <LessConsumeAlternativeThreshold>1.25</LessConsumeAlternativeThreshold>
+</Configuration>
+

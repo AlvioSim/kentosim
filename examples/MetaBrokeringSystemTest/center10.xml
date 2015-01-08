@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArchictectureConfiguration>
+ <Vendor>AMD Opteron</Vendor>
+ <OSName>Linux</OSName>
+ <ClockSpeed>2200</ClockSpeed>
+ <disKSize>10000</disKSize><!-- 0.05 TB-->
+ <Memory>530000</Memory> <!-- CPUs X 10.000 -->
+ <NumberCPUS>53</NumberCPUS>
+</ArchictectureConfiguration>

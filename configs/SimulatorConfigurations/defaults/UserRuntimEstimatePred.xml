@@ -1,0 +1,9 @@
+<PredictorConfiguration>
+  <Common>
+    <PreDeadlineMissManager>GRADUAL</PreDeadlineMissManager> <!-- No necessary for this predictor, but specified as an example -->
+    <PostDeadlineMissManager>GRADUAL</PostDeadlineMissManager> 
+  </Common>   
+  <UserRuntime>
+    <!-- actually this predictor has no extra parameters -->
+ </UserRuntime>
+</PredictorConfiguration>

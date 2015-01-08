@@ -1,0 +1,21 @@
+Loading the configuration file /home/bsc15/bsc15879/sim_mn2/SimulatorConfigurations/simulatorConfiguration.xml
+Error: The Error file /home/fguim/tmp/mn2Sim/error.log has not been openend. Some error has occurred
+	    Please check that the file path is correct and all the directories exist
+Error: The Log file /home/fguim/tmp/mn2Sim/debug.log has not been openend. Some error has occurred
+	    Please check that the file path is correct and all the directories exist
+Loading the simulation configuration file /gpfs/home/bsc15/bsc15879/experiments/CollisionesEASY/SDSC-SP2/experiment36/simulationConfiguration.xml
+There are no DeepSearchCollisionPolicy characteristics for the simulation 
+The specified policy is not the Grid Backfilling 
+Error: The Error file /home/fguim/tmp/mn2Sim/error.log has not been openend. Some error has occurred
+	    Please check that the file path is correct and all the directories exist
+Error: The Log file /home/fguim/tmp/mn2Sim/debug.log has not been openend. Some error has occurred
+	    Please check that the file path is correct and all the directories exist
+Using the debuglevel 2 and using the debug file /home/fguim/tmp/mn2Sim/debug.log
+Loading the architecture marenostrum model file
+Using the workload /home/fguim/experiments/CollisionesEASY/SDSC-SP2/experiment36/SDSC-SP2.swf
+Loading 1000 jobs (-1 means all the jobs )
+Some errors has occurred when loading the resource trace file .. please check the error log.
+The requirements trace has been load correctly 
+Undefined error the document has some errors. Please check the architecture configuration file.
+Please check that the configuration file exists..
+Creating a EASY policy simulator.. 

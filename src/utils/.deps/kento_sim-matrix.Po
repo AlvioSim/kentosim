@@ -1,0 +1,6 @@
+src/utils/kento_sim-matrix.o: src/utils/matrix.cpp \
+ /usr/include/stdc-predef.h src/utils/matrix.h
+
+/usr/include/stdc-predef.h:
+
+src/utils/matrix.h:
